@@ -6,23 +6,62 @@
   grid-area: brand;
 }
 
-.contact {
-  text-align: center;
-}
-
 .container {
+  background-color: black;
+  background-image: url("https://images.unsplash.com/photo-1535868463750-c78d9543614f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80");
+  background-size: 65rem;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   display: grid;
   grid-template-areas: "sidebar view";
   grid-template-columns: 15% 85%;
+}
+
+.description {
+  font-size: 120%;
+  line-height: 1.6;
+  margin: 1rem 0 1rem 0;
+  padding: 3rem;
+  text-align: justify;
+  text-justify: distribute;
+  width: 30rem;
 }
 
 .education {
   grid-area: education;
 }
 
+.educationDate {
+  font-size: 90%;
+  margin-left: auto;
+}
+
+.educationWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem 0;
+  text-align: left;
+}
+
 .items {
   font-size: 2rem;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0;
+}
+
+.institution {
+  display: flex;
+}
+
+.logo {
+  display: inline-block;
+  margin: 0 2rem 1rem;
+}
+
+.logo a {
+  color: #ffffff;
+  font-size: 2rem;
 }
 
 .menu {
@@ -38,12 +77,20 @@
   grid-area: project;
 }
 
+.projectWrapper {
+  margin: 3rem 0;
+}
+
+.section {
+  align-self: center;
+  text-align: center;
+}
+
 .skills {
   grid-area: skills;
 }
 
 .sidebar {
-  background-color: #121212;
   color: #ffffff;
   display: grid;
   grid-area: sidebar;
@@ -69,32 +116,35 @@
 }
 
 .subtitle {
+  align-self: center;
   font-size: 4rem;
   margin: 2rem 0 2rem 0;
 }
 
+.tech {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 130%;
+  margin: 3rem 0;
+}
+
 .title {
   font-size: 10rem;
-  margin: 4rem 0 4rem 0;
-  text-align: center;
+  margin: 3rem 0 3rem 0;
 }
 
 .view {
-  grid-area: view;
-  background-color: #121212;
   color: #ffffff;
+  grid-area: view;
 }
 
 .wrapper {
-  margin: 5rem;
-  padding: 3rem;
+  display: flex;
+  min-height: 85vh;
+  justify-content: center;
 }
 
 .wrapper a {
   color: #ffffff;
 }
 
-.wrapper p {
-  font-size: 110%;
-  margin: 1rem 0 1rem 0;
-}
