@@ -1,0 +1,100 @@
+.about {
+  grid-area: about;
+}
+
+.brand {
+  grid-area: brand;
+}
+
+.contact {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "sidebar view";
+  grid-template-columns: 15% 85%;
+}
+
+.education {
+  grid-area: education;
+}
+
+.items {
+  font-size: 2rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.menu {
+  align-self: center;
+  font-size: 2rem;
+}
+
+.more {
+  grid-area: more;
+}
+
+.project {
+  grid-area: project;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.sidebar {
+  background-color: #121212;
+  color: #ffffff;
+  display: grid;
+  grid-area: sidebar;
+  grid-template-areas:
+    "."
+    "brand"
+    "."
+    "about"
+    "project"
+    "education"
+    "skills"
+    "more"
+    ".";
+  grid-template-rows: repeat(10, 1fr);
+  height: 100vh;
+  left: 0;
+  overflow-x: hidden;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 15%;
+  z-index: 1;  
+}
+
+.subtitle {
+  font-size: 4rem;
+  margin: 2rem 0 2rem 0;
+}
+
+.title {
+  font-size: 10rem;
+  margin: 4rem 0 4rem 0;
+  text-align: center;
+}
+
+.view {
+  grid-area: view;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.wrapper {
+  margin: 5rem;
+  padding: 3rem;
+}
+
+.wrapper a {
+  color: #ffffff;
+}
+
+.wrapper p {
+  font-size: 110%;
+  margin: 1rem 0 1rem 0;
+}
