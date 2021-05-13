@@ -8,10 +8,7 @@
 
 .container {
   background-color: black;
-  background-image: url("https://raw.githubusercontent.com/NicolasArayaB/portfolio/master/img/dark-background-1.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  color: #ffffff;
   display: grid;
   grid-template-areas: "sidebar view";
   grid-template-columns: 15% 85%;
@@ -21,7 +18,7 @@
 .description {
   font-size: 120%;
   line-height: 1.6;
-  margin: 1rem 0 1rem 0;
+  margin: 0 0 1rem 0;
   padding: 3rem;
   text-align: justify;
   text-justify: distribute;
@@ -43,6 +40,10 @@
   justify-content: space-between;
   margin: 2rem 0;
   text-align: left;
+}
+
+.hov {
+  color: #ffffff;
 }
 
 .items {
@@ -74,23 +75,45 @@
   text-decoration: none;
 }
 
-.menu:hover, .logo:hover, a:hover {
+.logo a:hover, a.hov:hover {
+  color: #747474;
+}
+
+/* .menu:hover, .logo:hover, a:hover {
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    font-size: 120%
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    text-shadow: 120%
   }
-}  
+}   */
 
 .more {
   grid-area: more;
+}
+
+.petCloud {
+  text-decoration: underline;
+}
+
+.petCloudLinks {
+  display: none;
+  position: absolute;
+  left: 15%;
+  margin: 1rem auto;
+  right: 0;
+  text-align: center;
+  width: fit-content;
+}
+
+.petCloudLinks a {
+  margin: 0 1rem;
 }
 
 .project {
@@ -138,7 +161,7 @@
 .subtitle {
   align-self: center;
   font-size: 4rem;
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 0 3rem 0;
 }
 
 .tech {
@@ -168,8 +191,3 @@
   min-height: 85vh;
   justify-content: center;
 }
-
-.wrapper a {
-  color: #ffffff;
-}
-
