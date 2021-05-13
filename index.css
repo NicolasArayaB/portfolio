@@ -8,8 +8,7 @@
 
 .container {
   background-color: black;
-  background-image: url("https://images.unsplash.com/photo-1535868463750-c78d9543614f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1055&q=80");
-  background-size: 65rem;
+  background-image: url("https://raw.githubusercontent.com/NicolasArayaB/portfolio/master/portfolio/img/dark-background-1.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -70,15 +69,20 @@
   font-size: 2rem;
 }
 
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .menu:hover, .logo:hover, a:hover {
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
+@keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
@@ -145,7 +149,7 @@
 }
 
 .techAndLang {
-  margin-top: 3rem;
+  padding-top: 3rem;
 }
 
 .title {
@@ -160,6 +164,7 @@
 
 .wrapper {
   display: flex;
+  padding-top: 4rem;
   min-height: 85vh;
   justify-content: center;
 }
