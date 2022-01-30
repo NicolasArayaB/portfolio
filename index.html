@@ -1,201 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="meyer-reset.css">
   <title>Nicolas Araya</title>
 </head>
-<body>
-  <div class="container">
-    <div class="sidebar">
-      <div class="menu brand">
-        <a class="hov" href="#contact" >N | A</a>
-      </div>
-      <div class="menu about">
-        <a class="hov" href="#about">About</a>
-      </div>
-      <div class="menu project">
-        <a class="hov" href="#projects">Projects</a>
-      </div>
-      <div class="menu education">
-        <a class="hov" href="#education">Education</a>
-      </div>
-      <div class="menu skills">
-        <a class="hov" href="#tech">Technologies</a>
-      </div>
+
+<body class="container">
+  <nav class="sidebar">
+    <div class="menu brand">
+      <a class="hov" href="#contact">N | A</a>
     </div>
-    <div class="view">
-      <div id="contact" class="wrapper">
-        <div class="section">
-          <h1 class="title">Nicolás Araya</h1>
-          <h3 class="items">Full Stack Developer</h3>
-          <div class="logo">
-            <a href="https://github.com/NicolasArayaB">
-              <i class="fab fa-github-square"></i>
-            </a>
-          </div>
-          <div class="logo">
-            <a href="https://www.linkedin.com/in/nicolasarayab">
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
+    <div class="menu about">
+      <a class="hov" href="#about">About</a>
+    </div>
+    <div class="menu project">
+      <a class="hov" href="#projects">Projects</a>
+    </div>
+    <div class="menu education">
+      <a class="hov" href="#education">Education</a>
+    </div>
+    <div class="menu skills">
+      <a class="hov" href="#tech">Technologies</a>
+    </div>
+  </nav>
+  <main class="view">
+    <div id="contact" class="wrapper">
+      <section class="section">
+        <h1 class="title">Nicolás Araya</h1>
+        <h3 class="items">Full Stack Developer</h3>
+        <div class="logo">
+          <a href="https://github.com/NicolasArayaB">
+            <i class="fab fa-github-square"></i>
+          </a>
         </div>
-      </div>
-      <div id="about" class="wrapper">
-        <div class="section">
-          <h2 class="subtitle">About</h2>
+        <div class="logo">
+          <a href="https://www.linkedin.com/in/nicolasarayab">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </section>
+    </div>
+    <div id="about" class="wrapper">
+      <section class="section">
+        <h2 class="subtitle">About</h2>
+        <p class="description">
+          Full Stack Developer and Commercial Pilot.
+          My experience gave me the ability to work under
+          pressure, in multicultural teams, focusing on the
+          result regardless of what changes in the process.
+          I'm looking forward to develop solutions for daily problems, making cleaner and more
+          elegant code.
+        </p>
+      </section>
+    </div>
+    <div id="projects" class="wrapper">
+      <section class="section">
+        <h2 class="subtitle">Projects</h2>
+        <div class="projectWrapper">
+          <a class="hov items petCloud" onclick="show()">Pet Cloud</a>
+          <div class="petCloudLinks">
+            <a class="hov" href="https://github.com/NicolasArayaB/pet-cloud">Github Repository</a>
+            <a class="hov" href="https://pet-cloud.herokuapp.com">Deployed with Heroku</a>
+          </div>
+
           <p class="description">
-            Full Stack Developer and Commercial Pilot. 
-            My experience gave me the ability to work under
-            pressure, in multicultural teams, focusing on the
-            result regardless of what changes in the process.
-            I'm looking forward to develop solutions for daily problems, making cleaner and more
-            elegant code.
+            This project is focused on giving a medical history
+            for our pets in Chile, where every checkup, vaccine,
+            or even the diseases they have, are kept on each
+            veterinarian database. The solution we are
+            developing is made in React (Front End) with a
+            Flux structure, using libraries like React-Router,
+            React-Bootstrap, and SweetAlert. On the Back End,
+            Python with Flask and Flask-JWT, SQLAlchemy,
+            and PostgreSQL for our database. We use HL7 FHIR
+            through Hapi FHIR server to follow international
+            health standards. Also we incorporate AWS SES and
+            google places API to give a better user experience.
           </p>
         </div>
-      </div>
-      <div id="projects" class="wrapper">
-        <div class="section">
-          <h2 class="subtitle">Projects</h2>
-          <div class="projectWrapper">
-            <a class="hov items petCloud" onclick="show()">Pet Cloud</a>
-            <div class="petCloudLinks">
-              <a class="hov" href="https://github.com/NicolasArayaB/pet-cloud">Github Repository</a>
-              <a class="hov" href="https://pet-cloud.herokuapp.com">Deployed with Heroku</a>
-            </div>
-            
-            <p  class="description">
-              This project is focused on giving a medical history
-              for our pets in Chile, where every checkup, vaccine,
-              or even the diseases they have, are kept on each
-              veterinarian database. The solution we are
-              developing is made in React (Front End) with a
-              Flux structure, using libraries like React-Router,
-              React-Bootstrap, and SweetAlert. On the Back End,
-              Python with Flask and Flask-JWT, SQLAlchemy,
-              and PostgreSQL for our database. We use HL7 FHIR
-              through Hapi FHIR server to follow international
-              health standards. Also we incorporate AWS SES and
-              google places API to give a better user experience.
-            </p>
-          </div>
-          <div class="projectWrapper">
-            <a href="https://github.com/NicolasArayaB/binary-search-trees" class="hov items">Binary Search Tree</a>
-            <p class="description">
-              In this project I'm making a binary search tree with
-              different methods like insert, delete, and find
-              nodes. For this, I'm using Ruby.
-            </p>
-          </div>
-          <div class="projectWrapper">
-            <a href="https://github.com/NicolasArayaB/starwars-blog-reading-list" class="hov items">Star Wars Blog</a>
-            <p class="description">
-              A blog that shows information about characters,
-              planets, and starships from the Starwars Saga. You
-              can select your favorites and obtain detailed
-              information about each one of them. This
-              information is obtained from SWAPI API and
-              developed in React with a Flux structure, using
-              React-Router and React-Bootstrap.
-            </p>
-          </div>
+        <div class="projectWrapper">
+          <a href="https://github.com/NicolasArayaB/binary-search-trees" class="hov items">Binary Search Tree</a>
+          <p class="description">
+            In this project I'm making a binary search tree with
+            different methods like insert, delete, and find
+            nodes. For this, I'm using Ruby.
+          </p>
         </div>
-      </div>
-      <div id="education" class="wrapper">
-        <div class="section">
-          <h2 class="subtitle">Education</h2>
-          <div class="educationWrapper">
-            <div class="institution">
-              <a class="hov" href="http://4geeksacademy.com">4Geeks Academy</a>
-              <span class="educationDate">Jan 21 - Apr 21</span>
-            </div>
-            <div class="items">Full Stack Developer (Python - React)</div>
-          </div>
-          <div class="educationWrapper">
-            <div class="institution">
-              <a class="hov" href="http://theodinproject.com">The Odin Project</a>
-              <span class="educationDate">Jul 20 - present</span>
-            </div>
-            <div class="items">Full Stack Developer (Ruby on Rails)</div>
-          </div>
-          <div class="educationWrapper">
-            <div class="institution">
-              <p>ASD S.A.</p>
-              <span class="educationDate">Mar 12 - May 14</span>
-            </div>
-            <div class="items">MCC and ELTc A320</div>
-          </div>
-          <div class="educationWrapper">
-            <div class="institution">
-              <a class="hov" href="https://goldeneagle.cl">Golden Eagle Professional Academy</a>
-              <span class="educationDate">Jul 10 - Jan 12</span>
-            </div>
-            <div class="items">Commercial Pilot</div>
-          </div>
+        <div class="projectWrapper">
+          <a href="https://github.com/NicolasArayaB/starwars-blog-reading-list" class="hov items">Star Wars Blog</a>
+          <p class="description">
+            A blog that shows information about characters,
+            planets, and starships from the Starwars Saga. You
+            can select your favorites and obtain detailed
+            information about each one of them. This
+            information is obtained from SWAPI API and
+            developed in React with a Flux structure, using
+            React-Router and React-Bootstrap.
+          </p>
         </div>
-      </div>
-      <div id="tech" class="techAndLang wrapper">
-        <div  class="section">
-          <h2 class="subtitle">Technologies and Programming Languages</h2>
-          <div class="tech">
-            <div>
-              <i class="fab fa-python"></i>
-              <p>Python</p>
-            </div>
-            <div>
-              <i class="fas fa-gem"></i>
-              <p>Ruby</p>
-            </div>
-            <div>
-              <i class="fab fa-js-square"></i>
-              <p>JavaScript</p>
-            </div>
-            <div>
-              <i class="fab fa-css3-alt"></i>
-              <p>CSS3</p>
-            </div>
-            <div>
-              <i class="fab fa-html5"></i>
-              <p>HTML5</p>
-            </div>
-            <div>
-              <i class="fas fa-database"></i>
-              <p>SQL</p>
-            </div>
-          </div>
-          <div class="tech">
-            <div>
-              <i class="fas fa-pepper-hot"></i>
-              <p>Flask</p>
-            </div>
-            <div>
-              <i class="fab fa-react"></i>
-              <p>React</p>
-            </div>
-            <div>
-              <i class="fab fa-bootstrap"></i>
-              <p>Bootstrap</p>
-            </div>
-            <div>
-              <i class="fas fa-database"></i>
-              <p>SQLAlchemy</p>
-            </div>
-            <div>
-              <i class="fab fa-git"></i>
-              <p>Git</p>
-            </div>
-            <div>
-              <i class="fab fa-github"></i>
-              <p>Github</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </div>
-  </div>
+    <div id="education" class="wrapper">
+      <section class="section">
+        <h2 class="subtitle">Education</h2>
+        <div class="educationWrapper">
+          <div class="institution">
+            <a class="hov" href="http://4geeksacademy.com">4Geeks Academy</a>
+            <span class="educationDate">Jan 21 - Apr 21</span>
+          </div>
+          <div class="items">Full Stack Developer (Python - React)</div>
+        </div>
+        <div class="educationWrapper">
+          <div class="institution">
+            <a class="hov" href="http://theodinproject.com">The Odin Project</a>
+            <span class="educationDate">Jul 20 - present</span>
+          </div>
+          <div class="items">Full Stack Developer (Ruby on Rails)</div>
+        </div>
+        <div class="educationWrapper">
+          <div class="institution">
+            <p>ASD S.A.</p>
+            <span class="educationDate">Mar 12 - May 14</span>
+          </div>
+          <div class="items">MCC and ELTc A320</div>
+        </div>
+        <div class="educationWrapper">
+          <div class="institution">
+            <a class="hov" href="https://goldeneagle.cl">Golden Eagle Professional Academy</a>
+            <span class="educationDate">Jul 10 - Jan 12</span>
+          </div>
+          <div class="items">Commercial Pilot</div>
+        </div>
+      </section>
+    </div>
+    <div id="tech" class="techAndLang wrapper">
+      <section class="section">
+        <h2 class="subtitle">Technologies and Programming Languages</h2>
+        <div class="tech">
+          <div>
+            <i class="fab fa-python"></i>
+            <p>Python</p>
+          </div>
+          <div>
+            <i class="fas fa-gem"></i>
+            <p>Ruby</p>
+          </div>
+          <div>
+            <i class="fab fa-js-square"></i>
+            <p>JavaScript</p>
+          </div>
+          <div>
+            <i class="fab fa-css3-alt"></i>
+            <p>CSS3</p>
+          </div>
+          <div>
+            <i class="fab fa-html5"></i>
+            <p>HTML5</p>
+          </div>
+          <div>
+            <i class="fas fa-database"></i>
+            <p>SQL</p>
+          </div>
+        </div>
+        <div class="tech">
+          <div>
+            <i class="fas fa-pepper-hot"></i>
+            <p>Flask</p>
+          </div>
+          <div>
+            <i class="fab fa-react"></i>
+            <p>React</p>
+          </div>
+          <div>
+            <i class="fab fa-bootstrap"></i>
+            <p>Bootstrap</p>
+          </div>
+          <div>
+            <i class="fas fa-database"></i>
+            <p>SQLAlchemy</p>
+          </div>
+          <div>
+            <i class="fab fa-git"></i>
+            <p>Git</p>
+          </div>
+          <div>
+            <i class="fab fa-github"></i>
+            <p>Github</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
   <script src="index.js"></script>
 </body>
+
 </html>
