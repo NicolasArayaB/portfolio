@@ -1,3 +1,4 @@
+// Sidebar
 const links = document.querySelectorAll(".menu a")
 
 for (const link of links) {
@@ -15,12 +16,27 @@ function clickHandler(e) {
   });
 }
 
+// Show link options
 const show = () => {
   let links = document.querySelector(".petCloudLinks")
-  console.log(links.style.display)
+
   if (links.style.display === "none" || links.style.display === "") {
     links.style.display = "block";
   } else {
     links.style.display = "none";
   }
 }
+
+// Animate subtitles on scroll
+const callback = (entries) => {
+  entries.forEach(entry => {
+    entry.target.classList.toggle("is-visible");
+  });
+};
+
+let observer = new IntersectionObserver(callback);
+const targets = document.querySelectorAll(".change-on-scroll");
+
+targets.forEach(function (target) {
+  observer.observe(target);
+});
