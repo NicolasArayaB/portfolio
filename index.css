@@ -197,7 +197,7 @@
 }
 
 .subtitle.is-visible b {
-  animation: capColorChange 3s linear 0.8s normal forwards;
+  animation: capColorChange 2s linear 0.2s normal forwards;
   animation-fill-mode: forwards;
 }
 
