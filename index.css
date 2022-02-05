@@ -2,6 +2,14 @@
   grid-area: about;
 }
 
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #16f5ea;
+}
+
 .brand {
   grid-area: brand;
 }
@@ -25,6 +33,11 @@
   width: 30rem;
 }
 
+.description a {
+  color: #16f5ea;
+  text-decoration: none;
+}
+
 .education {
   grid-area: education;
 }
@@ -42,10 +55,6 @@
   text-align: left;
 }
 
-.hov {
-  color: #ffffff;
-}
-
 .items {
   font-size: 2rem;
   margin: 1rem 0;
@@ -61,7 +70,6 @@
 }
 
 .logo a {
-  color: #ffffff;
   font-size: 2rem;
 }
 
@@ -71,12 +79,7 @@
 }
 
 .menu a {
-  color: #ffffff;
   text-decoration: none;
-}
-
-.logo a:hover, a.hov:hover {
-  color: #747474;
 }
 
 .more {
