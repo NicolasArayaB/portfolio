@@ -229,7 +229,7 @@ a:hover {
   margin-top: 0.5rem;
 }
 
-.tech-item p:hover {
+.tech-item:hover p {
   color: #16f5ea;
 }
 
