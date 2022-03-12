@@ -4,41 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Icons -->
   <script src="https://kit.fontawesome.com/e3399fecd6.js" crossorigin="anonymous"></script>
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="meyer-reset.css">
   <title>Nico Araya</title>
 </head>
 
 <body class="container">
-  <nav class="sidebar">
-    <div class="menu brand">
-      <a href="#contact">N | A</a>
-    </div>
-    <div class="menu about">
-      <a href="#about">About</a>
-    </div>
-    <div class="menu project">
-      <a href="#projects">Projects</a>
-    </div>
-    <div class="menu education">
-      <a href="#education">Education</a>
-    </div>
-    <div class="menu skills">
-      <a href="#tech">Technologies</a>
-    </div>
+  <nav id="navbar" class="navbar">
+    <a href="javascript:void(0);" class="icon" onclick="collapse()">&#9776;</a>
+    <a href="#top">N | A</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#tech">Technologies</a>
   </nav>
   <main class="view">
-    <div id="contact" class="wrapper">
-      <section class="section">
-        <h1 class="title">
-          N<span class="i-span">
-            <p class="letter bounce">.</p>
-            <p class="letter">ı</p>
-          </span>co<br>
-          Araya
-        </h1>
-        <h3 class="items">Full Stack Developer</h3>
+    <section id="contact" class="wrapper">
+      <h1 class="title">
+        N<span class="i-span">
+          <p class="letter bounce">.</p>
+          <p class="letter">ı</p>
+        </span>co<br>
+        Araya
+      </h1>
+      <h3 class="items">Full Stack Developer</h3>
+      <div>
         <div class="logo">
           <a href="https://github.com/NicolasArayaB">
             <i class="fab fa-github-square"></i>
@@ -49,162 +42,152 @@
             <i class="fab fa-linkedin"></i>
           </a>
         </div>
-      </section>
-    </div>
-    <div id="about" class="wrapper">
-      <section class="section">
-        <h2 class="subtitle change-on-scroll is-visible"><b>W</b>ho's this guy?</h2>
+      </div>
+    </section>
+    <section id="about" class="wrapper">
+      <h2 class="subtitle change-on-scroll is-visible"><b>W</b>ho's this guy?</h2>
+      <p class="description">
+        I'm a Full Stack developer currently working for
+        <a href="https://www.romeroyasociados.cl/" target="blank">Romero y Asociados</a> as a product manager.
+        My experience gave me the ability to work under pressure, in multicultural teams,
+        focusing on the result regardless of what changes in the process.
+      </p>
+    </section>
+    <section id="projects" class="wrapper">
+      <h2 class="subtitle change-on-scroll is-visible"><b>P</b>rojects</h2>
+      <div class="projectWrapper">
+        <a class="items petCloud" href="javascript:void(0);" onclick="show()">Pet Cloud</a>
+        <div class="petCloudLinks">
+          <a href="https://github.com/NicolasArayaB/pet-cloud" target="blank">Github Repository</a>
+          <a href="https://pet-cloud.herokuapp.com" target="blank">Deployed with Heroku</a>
+        </div>
         <p class="description">
-          I'm a Full Stack developer currently working for
-          <a href="https://www.romeroyasociados.cl/" target="blank">Romero y Asociados</a>
-          with a passion for challenges, creating and building quality solutions.
-          My experience gave me the ability to work under pressure, in multicultural teams,
-          focusing on the result regardless of what changes in the process.
+          This project is focused on giving a medical history
+          for our pets in Chile, where every checkup, vaccine,
+          or even the diseases they have, are kept on each
+          veterinarian database. The solution we develop, was
+          made in React (Front End) with a Flux structure,
+          using libraries like React-Router, React-Bootstrap, and SweetAlert.
+          On the Back End, Python with Flask and Flask-JWT, SQLAlchemy,
+          and PostgreSQL for our database. We use HL7 FHIR
+          through Hapi FHIR server to follow international
+          health standards. Also we incorporate AWS SES and
+          google places API to give a better user experience.
+          Unfortunately, nowadays we don't have access to Hapi FHIR server
+          and this project is not available anymore.
         </p>
-      </section>
-    </div>
-    <div id="projects" class="wrapper">
-      <section class="section">
-        <h2 class="subtitle change-on-scroll is-visible"><b>P</b>rojects</h2>
-        <div class="projectWrapper">
-          <a class="items petCloud" onclick="show()">Pet Cloud</a>
-          <div class="petCloudLinks">
-            <a href="https://github.com/NicolasArayaB/pet-cloud" target="blank">Github Repository</a>
-            <a href="https://pet-cloud.herokuapp.com" target="blank">Deployed with Heroku</a>
-          </div>
-
-          <p class="description">
-            This project is focused on giving a medical history
-            for our pets in Chile, where every checkup, vaccine,
-            or even the diseases they have, are kept on each
-            veterinarian database. The solution we are
-            developing is made in React (Front End) with a
-            Flux structure, using libraries like React-Router,
-            React-Bootstrap, and SweetAlert. On the Back End,
-            Python with Flask and Flask-JWT, SQLAlchemy,
-            and PostgreSQL for our database. We use HL7 FHIR
-            through Hapi FHIR server to follow international
-            health standards. Also we incorporate AWS SES and
-            google places API to give a better user experience.
-          </p>
+      </div>
+      <div class="projectWrapper">
+        <a href="https://github.com/NicolasArayaB/binary-search-trees" class=" items" target="blank">Binary Search
+          Tree</a>
+        <p class="description">
+          In this project I'm making a binary search tree with
+          different methods like insert, delete, and find
+          nodes. For this, I'm using Ruby.
+        </p>
+      </div>
+      <div class="projectWrapper">
+        <a href="https://github.com/NicolasArayaB/starwars-blog-reading-list" class=" items" target="blank">Star
+          Wars Blog</a>
+        <p class="description">
+          A blog that shows information about characters,
+          planets, and starships from the Starwars Saga. You
+          can select your favorites and obtain detailed
+          information about each one of them. This
+          information is obtained from SWAPI API and
+          developed in React with a Flux structure, using
+          React-Router and React-Bootstrap.
+        </p>
+      </div>
+    </section>
+    <section id="education" class="wrapper">
+      <h2 class="subtitle change-on-scroll is-visible"><b>E</b>ducation</h2>
+      <div class="educationWrapper">
+        <div class="institution">
+          <a href="http://4geeksacademy.com" target="blank">4Geeks Academy</a>
+          <p class="educationDate">Jan 21 - Apr 21</p>
         </div>
-        <div class="projectWrapper">
-          <a href="https://github.com/NicolasArayaB/binary-search-trees" class=" items" target="blank">Binary Search
-            Tree</a>
-          <p class="description">
-            In this project I'm making a binary search tree with
-            different methods like insert, delete, and find
-            nodes. For this, I'm using Ruby.
-          </p>
+        <div class="items">Full Stack Developer (Python - React)</div>
+      </div>
+      <div class="educationWrapper">
+        <div class="institution">
+          <a href="http://theodinproject.com" target="blank">The Odin Project</a>
+          <p class="educationDate">Jul 20 - present</p>
         </div>
-        <div class="projectWrapper">
-          <a href="https://github.com/NicolasArayaB/starwars-blog-reading-list" class=" items" target="blank">Star
-            Wars Blog</a>
-          <p class="description">
-            A blog that shows information about characters,
-            planets, and starships from the Starwars Saga. You
-            can select your favorites and obtain detailed
-            information about each one of them. This
-            information is obtained from SWAPI API and
-            developed in React with a Flux structure, using
-            React-Router and React-Bootstrap.
-          </p>
+        <div class="items">Full Stack Developer (Ruby on Rails)</div>
+      </div>
+      <div class="educationWrapper">
+        <div class="institution">
+          <p>ASD S.A.</p>
+          <p class="educationDate">Mar 12 - May 14</p>
         </div>
-      </section>
-    </div>
-    <div id="education" class="wrapper">
-      <section class="section">
-        <h2 class="subtitle change-on-scroll is-visible"><b>E</b>ducation</h2>
-        <div class="educationWrapper">
-          <div class="institution">
-            <a href="http://4geeksacademy.com" target="blank">4Geeks Academy</a>
-            <span class="educationDate">Jan 21 - Apr 21</span>
-          </div>
-          <div class="items">Full Stack Developer (Python - React)</div>
+        <div class="items">MCC and ELTc A320</div>
+      </div>
+      <div class="educationWrapper">
+        <div class="institution">
+          <a href="https://goldeneagle.cl" target="blank">Golden Eagle Professional Academy</a>
+          <p class="educationDate">Jul 10 - Jan 12</p>
         </div>
-        <div class="educationWrapper">
-          <div class="institution">
-            <a href="http://theodinproject.com" target="blank">The Odin Project</a>
-            <span class="educationDate">Jul 20 - present</span>
-          </div>
-          <div class="items">Full Stack Developer (Ruby on Rails)</div>
+        <div class="items">Commercial Pilot</div>
+      </div>
+    </section>
+    <section id="tech" class="techAndLang wrapper">
+      <h2 class="subtitle change-on-scroll is-visible"><b>T</b>echnologies and Programming Languages</h2>
+      <div class="tech">
+        <div class="tech-item">
+          <i class="fab fa-python"></i>
+          <p>Python</p>
         </div>
-        <div class="educationWrapper">
-          <div class="institution">
-            <p>ASD S.A.</p>
-            <span class="educationDate">Mar 12 - May 14</span>
-          </div>
-          <div class="items">MCC and ELTc A320</div>
+        <div class="tech-item">
+          <i class="fas fa-gem"></i>
+          <p>Ruby on Rails</p>
         </div>
-        <div class="educationWrapper">
-          <div class="institution">
-            <a href="https://goldeneagle.cl" target="blank">Golden Eagle Professional Academy</a>
-            <span class="educationDate">Jul 10 - Jan 12</span>
-          </div>
-          <div class="items">Commercial Pilot</div>
+        <div class="tech-item">
+          <i class="fab fa-js-square"></i>
+          <p>JavaScript</p>
         </div>
-      </section>
-    </div>
-    <div id="tech" class="techAndLang wrapper">
-      <section class="section">
-        <h2 class="subtitle change-on-scroll is-visible"><b>T</b>echnologies and Programming Languages</h2>
-        <div class="tech">
-          <div>
-            <i class="fab fa-python"></i>
-            <p>Python</p>
-          </div>
-          <div>
-            <i class="fas fa-gem"></i>
-            <p>Ruby on Rails</p>
-          </div>
-          <div>
-            <i class="fab fa-js-square"></i>
-            <p>JavaScript</p>
-          </div>
-          <div>
-            <i class="fab fa-css3-alt"></i>
-            <p>CSS3</p>
-          </div>
-          <div>
-            <i class="fab fa-html5"></i>
-            <p>HTML5</p>
-          </div>
-          <div>
-            <i class="fas fa-database"></i>
-            <p>SQL</p>
-          </div>
+        <div class="tech-item">
+          <i class="fab fa-css3-alt"></i>
+          <p>CSS3</p>
         </div>
-        <div class="tech">
-          <div>
-            <i class="fab fa-react"></i>
-            <p>React</p>
-          </div>
-          <div>
-            <i class="fab fa-bootstrap"></i>
-            <p>Bootstrap</p>
-          </div>
-          <div>
-            <i class="fas fa-database"></i>
-            <p>SQLAlchemy</p>
-          </div>
-          <div>
-            <i class="fab fa-git"></i>
-            <p>Git</p>
-          </div>
-          <div>
-            <i class="fab fa-github"></i>
-            <p>Github</p>
-          </div>
-          <div>
-            <i class="fas fa-upload"></i>
-            <p>Heroku</p>
-          </div>
-          <div>
-            <i class="fas fa-cloud-upload"></i>
-            <p>Netlify</p>
-          </div>
-      </section>
-    </div>
+        <div class="tech-item">
+          <i class="fab fa-html5"></i>
+          <p>HTML5</p>
+        </div>
+        <div class="tech-item">
+          <i class="fas fa-database"></i>
+          <p>SQL</p>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-react"></i>
+          <p>React</p>
+        </div>
+        <div class="tech-item">
+          <i class="fas fa-database"></i>
+          <p>SQLAlchemy</p>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-bootstrap"></i>
+          <p>Bootstrap</p>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-git"></i>
+          <p>Git</p>
+        </div>
+        <div class="tech-item">
+          <i class="fab fa-github"></i>
+          <p>Github</p>
+        </div>
+        <div class="tech-item">
+          <i class="fas fa-upload"></i>
+          <p>Heroku</p>
+        </div>
+        <div class="tech-item">
+          <i class="fas fa-cloud-upload"></i>
+          <p>Netlify</p>
+        </div>
+      </div>
+    </section>
   </main>
   <script src="index.js"></script>
 </body>

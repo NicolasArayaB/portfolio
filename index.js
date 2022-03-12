@@ -1,5 +1,5 @@
 // Sidebar
-const links = document.querySelectorAll(".menu a")
+const links = document.querySelectorAll("li a")
 
 for (const link of links) {
   link.addEventListener("click", clickHandler);
@@ -14,6 +14,16 @@ function clickHandler(e) {
     top: offsetTop,
     behavior: "smooth"
   });
+}
+
+function collapse() {
+  let navbar = document.getElementById("navbar");
+
+  if (navbar.className === "navbar") {
+    navbar.className += " responsive";
+  } else {
+    navbar.className = "navbar";
+  }
 }
 
 // Show link options

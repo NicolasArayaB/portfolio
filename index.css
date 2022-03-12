@@ -1,7 +1,4 @@
-.about {
-  grid-area: about;
-}
-
+/* General */
 a {
   color: #ffffff;
 }
@@ -10,193 +7,51 @@ a:hover {
   color: #16f5ea;
 }
 
-.brand {
-  grid-area: brand;
-}
-
-.container {
+body.container {
   background-color: black;
   color: #ffffff;
-  display: grid;
-  grid-template-areas: "sidebar view";
-  grid-template-columns: 15% 85%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .description {
-  font-size: 120%;
   line-height: 1.6;
-  margin: 0 0 1rem 0;
   padding: 3rem;
   text-align: justify;
   text-justify: distribute;
-  width: 30rem;
+  font-size: 1.6rem;
 }
 
-.description a {
-  color: #16f5ea;
-  text-decoration: none;
+h3.items {
+  font-size: 2rem;
+  margin: 0.5rem 0;
 }
 
-.education {
-  grid-area: education;
+.title {
+  font-size: 6rem;
+  margin: 3rem 0 3rem 0;
 }
 
-.educationDate {
-  font-size: 90%;
-  margin-left: auto;
+main.view {
+  margin: 12% auto 0 auto;
 }
 
-.educationWrapper {
+section.wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 2rem 0;
-  text-align: left;
-}
-
-.items {
-  font-size: 2rem;
-  margin: 1rem 0;
-}
-
-.institution {
-  display: flex;
-}
-
-.logo {
-  display: inline-block;
-  margin: 0 2rem 1rem;
-}
-
-.logo a {
-  font-size: 2rem;
-}
-
-.menu {
-  align-self: center;
-  font-size: 2rem;
-}
-
-.menu a {
-  text-decoration: none;
-}
-
-.more {
-  grid-area: more;
-}
-
-.petCloud {
-  text-decoration: underline;
-}
-
-.petCloudLinks {
-  display: none;
-  position: absolute;
-  left: 15%;
-  margin: 1rem auto;
-  right: 0;
-  text-align: center;
-  width: fit-content;
-}
-
-.petCloudLinks a {
-  margin: 0 1rem;
-}
-
-.project {
-  grid-area: project;
-}
-
-.projectWrapper {
-  margin: 3rem 0;
-}
-
-.section {
-  align-self: center;
-  text-align: center;
-}
-
-.skills {
-  grid-area: skills;
-}
-
-.sidebar {
-  color: #ffffff;
-  display: grid;
-  grid-area: sidebar;
-  grid-template-areas:
-    "."
-    "brand"
-    "."
-    "about"
-    "project"
-    "education"
-    "skills"
-    "more"
-    ".";
-  grid-template-rows: repeat(10, 1fr);
-  height: 100vh;
-  left: 0;
-  overflow-x: hidden;
-  position: fixed;
-  text-align: center;
-  top: 0;
-  width: 15%;
-  z-index: 1;  
+  padding-top: 2rem;
+  max-width: 60rem;
+  margin: auto;
+  min-height: 60vh;
+  justify-content: center;
 }
 
 .subtitle {
   align-self: center;
   font-size: 4rem;
   margin: 2rem 0 3rem 0;
-}
-
-.tech {
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 130%;
-  margin: 5rem 0;
-}
-
-.techAndLang {
-  padding-top: 3rem;
-}
-
-.title {
-  font-size: 10rem;
-  margin: 3rem 0 3rem 0;
-}
-
-.view {
-  color: #ffffff;
-  grid-area: view;
-}
-
-.wrapper {
-  display: flex;
-  padding-top: 4rem;
-  min-height: 85vh;
-  justify-content: center;
-}
-
-/* animations */
-.bounce {
-  animation: bounce 0.6s, colorLoop 6s linear -0.8s infinite alternate;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-.i-span {
-  display: inline-block;
-}
-
-.letter {
-  text-align : center;
-  font-size  : 1em;
-  margin     : 0;
-  color      : white;
-  line-height: 0.65;
+  padding: 2rem;
 }
 
 .subtitle.is-visible b {
@@ -235,5 +90,221 @@ a:hover {
 
   100% {
     color: #16f5ea;
+  }
+}
+
+/* Navbar */
+nav#navbar {
+  overflow: hidden;
+  height: 3rem;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem;
+  position: sticky;
+  top: 0;
+  font-size: 0.9rem;
+  background-color: black;
+  z-index: 1;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.3rem;
+}
+
+nav a:not(:first-child) {
+  display: none;
+}
+
+nav.responsive a:not(:first-child) {
+  display: inline;
+  width: fit-content;
+}
+
+a:hover {
+  color: #16f5ea;
+}
+
+.active {
+  background-color: #16f5ea;
+  color: #ffffff;
+}
+
+/* About */
+#about a {
+  color: #16f5ea;
+  text-decoration: none;
+}
+
+/* Contact section */
+.logo {
+  display: inline-block;
+  margin: 0 2rem 1rem;
+}
+
+.logo a {
+  font-size: 2rem;
+}
+
+#contact {
+  margin: 0 auto 15rem auto;
+}
+.bounce {
+  animation: bounce 0.6s, colorLoop 6s linear -0.8s infinite alternate;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.i-span {
+  display: inline-block;
+}
+
+.letter {
+  text-align : center;
+  font-size  : 1em;
+  margin     : 0;
+  color      : white;
+  line-height: 0.65;
+}
+
+/* Projects */
+.petCloudLinks {
+  display: none;
+  margin: 1rem auto;
+  text-align: center;
+  width: fit-content;
+}
+
+.petCloudLinks a {
+  margin: 0 1rem;
+}
+
+/* Education section */
+
+.educationDate {
+  font-size: 50%;
+  margin: 0.7rem 0;
+}
+
+.educationWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2rem auto;
+  text-align: left;
+  max-width: 15rem;
+}
+
+.educationWrapper .items {
+  font-size: 1.5rem;
+}
+
+.institution p {
+  text-decoration: underline;
+  min-width: 20rem;
+}
+
+/* Technologies */
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  margin: 2.2rem 1rem;
+}
+
+.techAndLang {
+  padding: 3rem 2rem;
+}
+
+.tech-item {
+  margin: 0.5rem;
+  min-width: 7rem;
+}
+
+.tech-item p {
+  margin-top: 0.5rem;
+}
+
+.tech-item p:hover {
+  color: #16f5ea;
+}
+
+/* Web */
+@media screen and (min-width: 700px) {
+  /* General */
+  body {
+    display: flex;;
+  }
+
+  .items {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  main.view {
+    margin: 0;
+    width: 80%;
+  }
+
+  section.wrapper {
+    min-height: 90vh;
+  }  
+
+  .title {
+    font-size: 10rem;
+    margin: 3rem 0 3rem 0;
+  }
+
+  /* Navbar */
+  .icon {
+    display: none;
+  }
+  
+  nav#navbar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80vh;
+    position: sticky;
+    top: 10%;
+    left: 0;
+    width: 10%;
+  }
+
+  nav#navbar a:not(:first-child) {
+    display: inline;
+  }
+
+/* Contact */
+  .logo {
+    display: inline-block;
+    margin: 0 2rem 1rem;
+  }
+  
+  .logo a {
+    font-size: 2rem;
+  }
+
+/* Education */
+  .educationDate {
+    font-size: 70%;
+    margin: 1rem auto 0 0;
+  }
+  
+  .educationWrapper {
+    min-width: 40rem;
+  }
+
+  .tech {
+    font-size: 1.8rem;
+  }
+
+  .tech-item {
+    min-width: 8rem;
   }
 }
