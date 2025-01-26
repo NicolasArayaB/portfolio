@@ -12,16 +12,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: var(--primary-color);
     color: var(--text-color);
     line-height: 1.6;
@@ -40,6 +41,20 @@ a:hover {
 strong {
     color: var(--accent-color);
     font-weight: bold;
+}
+
+.title,
+.subtitle,
+.nav-brand,
+.menu a,
+.description,
+.experience-card h3,
+.experience-card h4,
+.education-card h3,
+.education-card h4,
+.tech-category h3 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
 }
 
 /* Navigation */
@@ -209,6 +224,7 @@ main {
 .name {
     position: relative;
     display: inline-block;
+    font-weight: bold;
 }
 
 .name p {
@@ -224,8 +240,8 @@ main {
 #dot {
     position: absolute;
     color: var(--accent-color);
-    top: -0.5em;
-    left: 0.70em;
+    top: -0.62em;
+    left: 0.77em;
     animation: bounce 0.6s ease infinite alternate;
 }
 
@@ -243,6 +259,7 @@ main {
     display: block;
     font-size: 0.8em;
     margin-top: 0.5rem;
+    font-weight: bold;
 }
 
 h3 {
@@ -423,7 +440,7 @@ h3 {
 }
 
 #experience .subtitle {
-    text-align: left;
+    text-align: center;
     margin-bottom: 3rem;
 }
 
